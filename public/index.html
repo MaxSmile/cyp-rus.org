@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyprus-Russian Association of Paphos</title>
+
+    <!-- Firebase -->
+    <script defer src="/__/firebase/10.14.1/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/10.14.1/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=false"></script>
+
+    <style>
+      body {
+        background-color: #000;
+        color: #fff;
+        font-family: 'Roboto', Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        text-align: center;
+      }
+
+      img {
+        margin-top: 20px;
+        width: 150px;
+        height: auto;
+      }
+
+      h1, p {
+        margin: 20px 0;
+        font-size: 18px;
+      }
+
+      .container {
+        max-width: 600px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Logo -->
+    <img src="images/cyp-rus-org-logo.webp" alt="Cyprus Russian Association Logo">
+
+    <!-- Message Container -->
+    <div class="container">
+      <h1>Website Under Maintenance</h1>
+      <p>
+        Dear Friends and Members,
+        <br><br>
+        Due to the recent events that have profoundly impacted our community, the Cyprus-Russian Association of Paphos is currently undergoing a period of transition. As you are aware, the situation since February 2022 has changed the lives of many, and our association, which has always welcomed people of diverse backgrounds, is adapting to these new circumstances.
+        <br><br>
+        
+        With warm regards,
+        <br>
+        Cyprus-Russian Association of Paphos
+      </p>
+    </div>
+
+    
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        try {
+          let app = firebase.app();
+          let features = ['analytics'].filter(feature => typeof app[feature] === 'function');
+          console.log(`Loaded: ${features.join(', ')}`);
+        } catch (e) {
+          console.error(e);
+        }
+      });
+    </script>
+  </body>
+</html>
